@@ -1,0 +1,63 @@
+﻿@using WebGrease.Css
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - TransTrac</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
+   
+    @Styles.Render("~/Content/css")
+    
+
+</head>
+
+<body>
+
+<div id="portal_grid">
+    <div id="portal_grid_logo" class="grid_component">
+        <img src="~/Content/Images/transtrac_logo_white.png" alt="TransTrac logo" id="logo_white"/>
+    </div>
+    
+    <div id="horizontal_nav">
+        <img src="~/Content/Images/icon_user.png" alt="User Icon" id="user_icon"/>
+        
+        <div id="input_div">
+            <i class="material-icons search_icon"> search </i>
+            <input type="text" class="searchBox" placeholder="Search..."/>
+        </div>
+        
+      
+        <a href="@Url.Action("Portal", "Home")" id="link_employeeportal"><input type='button' value='Switch to Admin View' id='switch_to_user_view'/></a>
+    </div>
+    
+    <div id="portal_side_nav">
+        <ul class="side_bar_menu">
+            <li class="side_bar_section_title"> Data & Analytics </li>
+            <li class="sb_text"><a href="@Url.Action("EmployeePortal", "Home")"> <i class="material-icons">
+                trending_up
+            </i> Overview</a></li>
+            <li class="sb_text"><a href="@Url.Action("EmployeeStatements", "Home")"> <i class="material-icons">
+                bar_chart
+            </i>Statements</a></li>
+            <li class="sb_text"><a href="@Url.Action("EmployeeManageAlerts", "Home")"> <i class="material-icons">
+                notification_important
+            </i> Manage Alerts</a></li>
+        
+        </ul>
+    </div>
+    
+    <div id="portal_body">
+        
+        @RenderBody()
+        
+    </div>
+    @Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js")
+    @Scripts.Render("~/Scripts/main.js")
+</div>
+
+</body>
+</html>

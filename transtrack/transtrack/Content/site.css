@@ -1,0 +1,432 @@
+﻿html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color:#73747D;
+}
+
+
+
+/* -------------- LOGIN PAGE -------------- */
+
+
+#login_form {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#logo {
+    width: 260px;
+}
+
+#user_icon {
+    height: 80%;
+    margin-right: 2%;
+}
+
+.searchBox {
+    background-color: #EBEDF0;
+    margin-top: 3%;
+    height: 50%;
+    width: 60%;
+    border: none;
+}
+
+
+form input {
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #006f51;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.input_box {
+    color: #006f51;
+    font-size: 0.65em;
+}
+
+form input:focus {
+    outline: none!important;
+    width: 325px;
+}
+
+#jumbotron {
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+}
+
+#jumbotron h3 {
+    line-height: 1;
+    color: inherit;
+}
+
+#jumbotron p {
+    line-height: 1.4;
+}
+
+.container #jumbotron {
+    border-radius: 6px;
+    text-align: -webkit-center;
+}
+
+.container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#log_button {
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: 300px;
+    background-color: #006f51;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 8px 0;
+}
+
+::-webkit-input-placeholder {
+    text-indent: 15%;
+    font-size:1.3em;
+}
+::-moz-placeholder {
+    text-indent: 15%;
+    font-size:1.3em;
+} 
+:-moz-placeholder {
+    text-indent: 15%;
+    font-size:1.3em;
+} 
+:-ms-input-placeholder {
+    text-indent: 15%;
+    font-size:1.3em;
+}
+
+#input_div {
+    background-color: #EBEDF0;
+    width: 30%;
+    height: 50%;
+    margin-right: 5%;
+    display: flex;
+}
+
+/* -------------- PORTAL LAYOUT -------------- */
+
+#portal_grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 10% 90%;
+    height: 100%;
+    width: 100%;
+}
+
+#portal_side_nav {
+    grid-column-start:1;
+    grid-row-start:2;
+    background-color: #201D28;
+    
+}
+
+.side_bar_menu{
+    list-style-type: none;
+    font-family: sans-serif;
+    line-height: 2.4em;
+    font-size: 1.1em;
+    margin-top: 25%;
+    margin-left: 3%;
+}
+
+#portal_grid_logo {
+    grid-column-start: 1;
+    grid-row-start:1;
+    background-color: #006f51;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portal_body {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: #EBEDF0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#logo_white {
+    height: 50%;
+    width: 70%;
+}
+
+.side_bar_section_title {
+    color: #EBEDF0;
+}
+
+.side_bar_menu i {
+    margin-right: 5%;
+}
+
+textarea, select, input, button {
+    outline: none;
+}
+
+.search_icon {
+    color: #999;
+    margin-top: 2.5%;
+    margin-left: 3%;
+}
+
+/* -------------- ALL-PAGES TEMPLATE -------------- */
+
+#footer {
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+    z-index: 2;
+    background: #006f51;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display:block;
+}
+
+#footer p {
+    float: left;
+    font-size: 11px;
+    margin-top: 16px;
+    margin-left: 3em;
+    color: #fff;
+    font-family: Open Sans,sans-serif;
+}
+
+#horizontal_nav {
+    grid-column-start:2;
+    grid-row-start:1;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.portal_component {
+    align-self: center;
+    margin-bottom:5%;
+}
+
+#switch_to_user_view {
+    decoration: none;
+    border-color: #00B5E2;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    color: #00B5E2;
+    min-width: 82px;
+    
+}
+
+#link_employeeportal {
+    margin-right: 20%;
+}
+
+
+
+/* -------------------- REC ACTIVITY ------------------- */
+
+table {
+    border-collapse: collapse;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3%;
+}
+
+.rec_act_table {
+    width: 90%;
+    color: #73747D;
+    height: 35%;
+    margin-bottom: 3%;
+}
+
+table td, th{
+    padding: 8px;
+    text-align: center;
+}
+
+table tr:nth-child(1) {
+    color: white;
+    font-size: 1.3em;
+}
+
+table tr:nth-child(2n+4) {
+    background-color: #D3D6DE;
+}
+
+table tr:nth-child(2) {
+    background-color: #ffffff;
+}
+
+/* top-left border-radius */
+table tr:first-child th:first-child {
+    border-top-left-radius: 6px;
+}
+
+/* top-right border-radius */
+table tr:first-child th:last-child {
+    border-top-right-radius: 6px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+}
+
+/* ---------------------- EXP PERCENT --------------------- */
+
+.exp_percent {
+    background-color: white;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 0%!important;
+}
+
+#barChart {
+    max-width: 480px;
+    display: flex;
+    align-self: center;
+    
+}
+
+/* ---------------------- TOP SPENDERS --------------------- */
+
+.top_spenders {
+    background-color: white;
+    width: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%!important;
+}
+
+#donutChart {
+    max-width: 350px;
+    display: flex;
+    align-self: center;
+}
+
+#donut_chart_container {
+    height: 235px;
+}
+
+#donut_chart_container2 {
+    height: 235px;
+}
+
+/* ----------------------- STATEMENTS ------------------------- */
+
+#statements_table {
+    width: 75%;
+}
+
+#manage_alerts_table {
+    width: 75%;
+    line-height: 2em;
+}
+
+#sort_by_button {
+    background-color: #4FA800;
+    decoration: none;
+    border: none;
+    padding: 7px 10px;
+    width: 40%;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 8px 0;
+}
+
+#add_alert {
+    color: #4FA800;
+}
+
+#select_by {
+    background-color: white;
+    height: 60%;
+    width: 50%;
+    width: 50%;
+    font-size: 0.8em;
+    color: #73747D;
+}
+
+#add_row{
+    
+}
+
+/* ----------------------- TEAM ------------------------- */
+
+#select_team {
+    background-color: #FFFFFF;
+    margin-top: 2%;
+    width: 15%;
+    font-size: 0.9em;
+    margin-right: 4%;
+    min-width: 123px;
+}
+
+#reload_state_button{
+    background-color: #4FA800;
+    decoration: none;
+    border: none;
+    padding: 7px 10px;
+    width: 10%;
+    border-radius: 10px;
+    font-size: 0.9em;
+    color: #fff;
+    margin-top: 2%;
+    min-width: 82px;
+}
+
+#select_team_container {
+    width: 100%;
+    font-size: 0.9em;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+
+
+/* ----------------------- INDIVIDUAL ------------------------- */
+
+#expensesChart {
+    max-width: 480px;
+    display: flex;
+    align-self: center;
+}

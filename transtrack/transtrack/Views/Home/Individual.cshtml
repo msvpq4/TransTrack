@@ -1,0 +1,65 @@
+@model IEnumerable<transtrack.Models.Statement>
+@{
+    ViewBag.Title = "Individual";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="select_team_container">
+    Employee: <select name="Employee" id="select_team">
+        @foreach (var item in Model)
+        {
+            <option value=@item.Name.ToString()>@item.Name</option>
+        }
+    </select>
+    <input type='button' value='Reload' id='reload_state_button'/>
+</div>
+
+<table class="rec_act_table">
+    <tr>
+        <th colspan="3" bgcolor="#00B5E2">Recent Activity</th>
+    </tr>
+    <tr>
+        <th>Merchant</th>
+        <th>Charge</th>
+        <th>Date </th>
+    </tr>
+    
+    @foreach (var item in Model.Take(4))
+    {
+        <tr>
+            <td>@item.Store</td>
+            <td>@item.Amount.ToString("C")</td>
+            <td>@item.Date.ToShortDateString()</td>
+        </tr>
+    }
+    
+</table>
+
+<table class="exp_percent portal_component">
+    <tr>
+        <th bgcolor="#00B5E2">Expenditure Percentage</th>
+    </tr>
+    <tr>
+        <td>
+            <canvas id="barChart" width="480" value="team"></canvas>
+        </td>
+    </tr>
+</table>
+
+<input value = "individual" id="page" type="hidden"/>
+
+<table class="top_spenders portal_component">
+    <tr>
+        <th bgcolor="#00B5E2">Top Categories</th>
+    </tr>
+    <tr>
+        <td id="donut_chart_container" >
+            <canvas id="donutChart"></canvas>
+        </td>
+    </tr>
+</table>
+
+
+
+
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_transtrack.339357878.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="transtrack" t="IncludeRecursive">
+        <e p="App_Data" t="Include" />
+        <e p="App_Start" t="Include">
+          <e p="BundleConfig.cs" t="Include" />
+          <e p="FilterConfig.cs" t="Include" />
+          <e p="RouteConfig.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="Images" t="Include">
+            <e p="bluegreen_circle.svg" t="Include" />
+            <e p="circle.png" t="Include" />
+            <e p="graph.png" t="Include" />
+            <e p="greenyellow_circle.svg" t="Include" />
+            <e p="icon_user.png" t="Include" />
+            <e p="transtrac_logo.svg" t="Include" />
+            <e p="transtrac_logo_green.png" t="Include" />
+            <e p="transtrac_logo_white.png" t="Include" />
+          </e>
+          <e p="Site.css" t="Include" />
+          <e p="statement.csv" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="HomeController.cs" t="Include" />
+        </e>
+        <e p="favicon.ico" t="Include" />
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="Models" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="main.js" t="Include" />
+        </e>
+        <e p="transtrack.csproj" t="IncludeRecursive" />
+        <e p="Views" t="Include">
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Home" t="Include">
+            <e p="EmployeeManageAlerts.cshtml" t="Include" />
+            <e p="EmployeePortal.cshtml" t="Include" />
+            <e p="EmployeeStatements.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="Individual.cshtml" t="Include" />
+            <e p="ManageAlerts.cshtml" t="Include" />
+            <e p="Portal.cshtml" t="Include" />
+            <e p="Statements.cshtml" t="Include" />
+            <e p="Team.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_LayoutTwo.cshtml" t="Include" />
+            <e p="_TopNav.cshtml" t="Include" />
+            <e p="Error.cshtml" t="Include" />
+          </e>
+          <e p="Web.config" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="transtrack.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

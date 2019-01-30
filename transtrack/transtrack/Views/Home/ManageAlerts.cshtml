@@ -1,0 +1,55 @@
+
+@{
+    ViewBag.Title = "ManageAlerts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table id="manage_alerts_table">
+    <tr>
+        <th colspan="5" bgcolor="#00B5E2"> Manage Alerts </th>
+    </tr>
+    <tr>
+        <th colspan="2">
+            <select name="Sort By" id="select_by">
+                <option value="team1">Sort By</option>
+                <option value="team2">Range</option>
+                <option value="team3">Last Alert</option>
+                <option value="team4">Description</option>
+            </select>
+
+        </th>
+        <th colspan="1"><input type='button' value='Sort' id='sort_by_button'/></th>
+        <th colspan="2"> <i class="material-icons" id = "add_alert" onclick="addStatement()"> add_circle_outline </i> </th>
+    </tr>
+    <tr>
+        <th> Alert </th>
+        <th> Employee </th>
+        <th> Range </th>
+        <th> Description </th>
+        <th> Last Alert </th>
+    </tr>
+    <tr>
+        <td> 1 </td>
+        <td> All employees</td>
+        <td> 10/12/2015 - 12/31/2090</td>
+        <td> Purchase > $250 </td>
+        <td> 10/23/2018 </td>
+    </tr>
+    <tr>
+        <td> 2 </td>
+        <td> Carter Blake</td>
+        <td> 10/12/2017 - 12/31/2018</td>
+        <td> Purchase b4 6am </td>
+        <td> 9/12/2018 </td>
+    </tr>
+    <tr>
+        <td> 3 </td>
+        <td> Chad Whiles</td>
+        <td> 10/12/2017 - 12/31/2090</td>
+        <td> OOS Purchase </td>
+        <td> 6/30/2018 </td>
+    </tr>
+    <tr id="add_row"></tr>
+    
+    
+</table>

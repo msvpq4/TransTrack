@@ -1,0 +1,58 @@
+@model IEnumerable<transtrack.Models.Statement>
+@{
+    ViewBag.Title = "Statements";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table id="statements_table">
+    <tr>
+        <th colspan= "4" bgcolor="#00B5E2">Statements</th>
+    </tr>
+    
+    <tr>
+        <th>
+            <select name="Team">
+                <option value="team1">Team</option>
+                <option value="Doc & Results">Doc & Results</option>
+            </select>
+
+        </th>
+        <th>
+            <select name="Employee">
+                <option value="Name">Name</option>
+                @foreach (var item in Model)
+                {
+                    <option value=@item.Name.ToString()>@item.Name</option>
+                }
+            </select>
+        </th>
+        <th>
+            <select name="month">
+                <option value="Select Month">Month</option>
+                <option value="December">December</option>
+                <option value="November">November</option>
+                <option value="October">October</option>
+                <option value="September">September</option>
+            </select>
+        </th>
+        
+        <th>
+            <input type='button' value='Generate' id='save_state_button' onclick='generate_statements()'/>
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+            Statements
+        </td>
+        <td colspan = "2">
+            Generated
+        </td>
+        <td>
+            Save Statement
+        </td>
+    </tr>  
+    <tr id="append_row"> </tr>
+
+</table>
+

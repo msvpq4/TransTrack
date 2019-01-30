@@ -1,0 +1,47 @@
+
+@{
+    ViewBag.Title = "Statements Employee";
+    Layout = "~/Views/Shared/_LayoutTwo.cshtml";
+}
+
+<table id="statements_table">
+    <tr>
+        <th colspan= "4" bgcolor="#00B5E2">Statements</th>
+    </tr>
+    
+    <tr>
+     
+        <th> 
+            <td colspan="1">
+                <select name="month">
+                    <option value="Select Month">Month</option>
+                    <option value="December">December</option>
+                    <option value="November">November</option>
+                    <option value="October">October</option>
+                    <option value="September">September</option>
+                </select>
+            </td>
+        </th>
+        
+        <th>
+            
+            <td colspan="2">
+            <input type='button' value='Generate' id='save_state_button' onclick='generate_statements()'/>
+            </td>
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+            Statements
+        </td>
+        <td colspan = "2">
+            Generated
+        </td>
+        <td>
+            Save Statement
+        </td>
+    </tr>  
+    <tr id="append_row"> </tr>
+
+</table>
